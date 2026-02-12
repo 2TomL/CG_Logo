@@ -1,3 +1,24 @@
+ .vr_layer.highlight {
+	box-shadow: 0 0 8px 2px #ffb3d9, 0 0 0 2px #ffb3d9;
+	border-color: #ffb3d9 !important;
+	animation: highlight-cube 0.5s cubic-bezier(0.4,0,0.2,1);
+	z-index: 20;
+}
+
+@keyframes highlight-cube {
+	0% {
+		box-shadow: 0 0 0 0 #ffb3d9;
+		border-color: #00ffe7;
+	}
+	30% {
+		box-shadow: 0 0 12px 4px #ffb3d9;
+		border-color: #ffb3d9;
+	}
+	100% {
+		box-shadow: 0 0 0 0 #ffb3d9;
+		border-color: #00ffe7;
+	}
+}
 /* Liquid overlay canvas styling */
 #liquid-canvas {
 	position: fixed;

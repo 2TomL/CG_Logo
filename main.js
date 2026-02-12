@@ -1,3 +1,17 @@
+// Highlight pink border in sync with CG movement (from back to front)
+let highlightIndex = 0;
+setInterval(() => {
+  const layers = document.querySelectorAll('.vr_layer');
+  layers.forEach(layer => layer.classList.remove('highlight'));
+  if (layers.length === 0) return;
+  // Omgekeerde richting: van voor naar achter
+  const reverseIndex = layers.length - 1 - highlightIndex;
+  layers[reverseIndex].classList.add('highlight');
+  setTimeout(() => {
+    layers[reverseIndex].classList.remove('highlight');
+  }, 500);
+  highlightIndex = (highlightIndex + 1) % layers.length;
+}, 1200);
 // Vul triggers
 const triggers = document.querySelector('.triggers');
 for (let i = 0; i < 400; i++) {
