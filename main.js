@@ -40,7 +40,7 @@ for (let i = 1; i <= layerCount; i++) {
       <svg width="320" height="320" viewBox="-40 -40 320 320" style="transform: scale(${scale});">
         <g transform="rotate(-45 120 120)">
           <text x="30" y="220" font-family="MeltSwashes, Anton, sans-serif" font-size="210" fill="#ff69b4" stroke="#00bfff" stroke-opacity="1" stroke-width="7">C</text>
-          <text x="110" y="180" font-family="MeltSwashes, Anton, sans-serif" font-size="110" fill="#00bfff" stroke="#ff69b4" stroke-opacity="1" stroke-width="10">G</text>
+          <text x="120" y="230" font-family="MeltSwashes, Anton, sans-serif" font-size="110" fill="#00bfff" stroke="#ff69b4" stroke-opacity="1" stroke-width="10">G</text>
         </g>
       </svg>
     `;
