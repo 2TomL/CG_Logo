@@ -37,10 +37,10 @@ for (let i = 1; i <= layerCount; i++) {
     // CG wordt van klein naar groot
     const scale = 0.5 + (i / (layerCount / 2)) * 0.5; // van 0.5 tot 1
     item.innerHTML = `
-      <svg width="240" height="240" viewBox="0 0 240 240" style="transform: scale(${scale});">
-        <g>
-          <text x="10" y="200" font-family="MeltSwashes, Anton, sans-serif" font-size="210" fill="#ff69b4" stroke="#00bfff" stroke-opacity="1" stroke-width="7">C</text>
-          <text x="85" y="170" font-family="MeltSwashes, Anton, sans-serif" font-size="110" fill="#00bfff" stroke="#ff69b4" stroke-opacity="1" stroke-width="10">G</text>
+      <svg width="320" height="320" viewBox="-40 -40 320 320" style="transform: scale(${scale});">
+        <g transform="rotate(-45 120 120)">
+          <text x="30" y="220" font-family="MeltSwashes, Anton, sans-serif" font-size="210" fill="#ff69b4" stroke="#00bfff" stroke-opacity="1" stroke-width="7">C</text>
+          <text x="110" y="180" font-family="MeltSwashes, Anton, sans-serif" font-size="110" fill="#00bfff" stroke="#ff69b4" stroke-opacity="1" stroke-width="10">G</text>
         </g>
       </svg>
     `;
