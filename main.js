@@ -11,7 +11,7 @@ setInterval(() => {
     layers[reverseIndex].classList.remove('highlight');
   }, 500);
   highlightIndex = (highlightIndex + 1) % layers.length;
-}, 1200);
+}, 950);
 // Vul triggers
 const triggers = document.querySelector('.triggers');
 for (let i = 0; i < 400; i++) {
@@ -39,8 +39,8 @@ for (let i = 1; i <= layerCount; i++) {
     item.innerHTML = `
       <svg width="240" height="240" viewBox="0 0 240 240" style="transform: scale(${scale});">
         <g>
-          <text x="30" y="200" font-family="MeltSwashes, Anton, sans-serif" font-size="210" fill="#ff69b4" stroke="#00bfff" stroke-opacity="1" stroke-width="7">C</text>
-          <text x="110" y="170" font-family="MeltSwashes, Anton, sans-serif" font-size="110" fill="#00bfff" stroke="#ff69b4" stroke-opacity="1" stroke-width="10">G</text>
+          <text x="10" y="200" font-family="MeltSwashes, Anton, sans-serif" font-size="210" fill="#ff69b4" stroke="#00bfff" stroke-opacity="1" stroke-width="7">C</text>
+          <text x="85" y="170" font-family="MeltSwashes, Anton, sans-serif" font-size="110" fill="#00bfff" stroke="#ff69b4" stroke-opacity="1" stroke-width="10">G</text>
         </g>
       </svg>
     `;
